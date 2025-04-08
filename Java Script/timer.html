@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setTimeout(dsp,1000)"> click me </button>
+
+    <p> current time is : <span id="clk"> </span> </p>
+    <br>
+    <button onclick="stopme(stopme,1000)"> stop me </button>
+
+    <script>
+        function dsp(){
+            alert("after  wait few seonds")
+        }
+        
+        function showTime(){
+            let d=new Date();    
+            document.getElementById("clk").innerHTML=d.toLocaleTimeString();
+        }
+        // setInterval(showTime,1000)  // (1000 = one second)
+    
+        let id=setInterval(showTime,1000)
+        function stopme(){
+            clearInterval(id)
+        }
+        
+
+    </script>
+</body>
+</html>

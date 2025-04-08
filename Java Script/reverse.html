@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputstring" type="text" placeholder="enter the string"/>
+    <br><br>
+    <button onclick="reversestring()"> REVERS </button>
+    <br><br>
+    <p id="result"></p>
+    <script>
+        function reversestring(){
+            const inputvalue=document.getElementById("inputstring").value
+            const reversed=inputvalue.split('').reverse().join('')
+            document.getElementById("result").textContent=reversed
+        }
+
+// reverse string without using reverse()method        
+        // function reversestring(){
+        //     const inputvalue=document.getElementById("inputstring").value
+        //     let reversed=''
+        //     for(let i=inputvalue.length-1;i>=0;i--){
+        //         reversed+=inputvalue[i]
+        //     }
+        //     document.getElementById("result").textContent=reversed
+        // }
+    </script>
+</body>
+</html>

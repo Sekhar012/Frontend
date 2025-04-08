@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> ===STRINGS===</h1>
+    <script>
+        var str="welcome to string"
+        var str1='hello world'
+        var str2="hi hello welcome"
+        var str3="rajesh"
+        var str4=" raja sekhar"
+        var str5="welcome to strings"
+
+        console.log("leangth of string : "+ str.length);
+        console.log("leangth of string : "+ str1.length);
+
+        console.log("g index :"+ str.indexOf('g'));
+        console.log("h index str1:"+ str2.indexOf('h'))
+        console.log("h index str1:"+ str2.lastIndexOf('h'))
+
+        console.log("character of string : "+str.charAt(15));
+        console.log("character of string : "+str2.charAt(9));
+        console.log("character of string : "+str2.charAt(30));
+
+        console.log("#key value : "+str.charCodeAt(15))
+        console.log("#key value : "+str1.charCodeAt(5))
+
+        console.log("any character is present in given string :"+str.includes("wel"))
+        console.log("any character is present in given string :"+str1.includes("sekhar"))
+
+        console.log("concat of string : "+ str.concat(str2 ));
+        console.log("concat of string : "+ str.concat(str2,str1));
+
+     //repeat
+        console.log("repeat the string : "+ str1.repeat(3))
+        console.log("repeat the string : "+ str2.repeat(3))
+
+        console.log(str4.length)
+    //removing extra spaces
+        let b=str4.trim()
+        console.log(b.length)
+    
+    //slice(str,end)
+        console.log("slice : ",str.slice(2,7))  //(start num,end num)
+        console.log(str.slice(4))
+        console.log(str.slice(-1))
+        console.log(str.slice(-7,-1))
+
+    //substring (starting,ending)-->we don't have reverse negitive values 
+        console.log("substring : ",str1.substring(0))
+        console.log(str1.substring(0,8))
+        console.log(str.substring(1,4))
+
+    //substr(str,length)
+    console.log("substr : ",str1.substr(0))
+    console.log(str1.substr(0,8)) //depurecater not work some times
+    console.log(str.substr(1,4))    
+
+    //replace
+    console.log(str5.replace("strings",'raja sekhar'));
+
+    //split
+    let fruits="banana,apple,orange"
+    console.log(fruits)
+    console.log(fruits.split(" "))
+    console.log(fruits.split(","))
+
+    //reverse the string
+    let a="raja sekhar"
+    let result=a.split('').reverse('').join('')
+    console.log(result)
+
+    // let rvrs=""
+    // for (let j=result.length-1;j>=0;j--)
+    //{
+    //     rvrs=result[j]
+
+    // }
+    
+
+        
+
+        let i=120
+        if(i%3==0&&i%5==0){
+            console.log("fizzbuzz")
+        }
+        else if(i%3==0){
+            console.log("fizz")
+        }
+        else if(i%5==0){
+            console.log("buzz")
+        }
+        else{
+            console.log(" Not fizzbuzz")
+        }
+    
+    </script>
+</body>
+</html>

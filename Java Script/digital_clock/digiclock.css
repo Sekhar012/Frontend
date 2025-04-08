@@ -1,0 +1,16 @@
+body{
+    background-color: aquamarine;
+
+}
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    color: rgba(16, 1, 232, 0.991);
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-size:100px;
+    white-space: nowrap;
+}

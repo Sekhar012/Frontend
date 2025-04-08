@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={ name:'raju', address:'sklm',id_no:92,ph_no:7702941293,age:23}
+        console.log(person)
+        console.log(typeof person)
+//two types ofnotations . Dot notation, [] array notation
+        console.log(person.name)
+        console.log(person.age)
+        console.log(person.id_no)
+        
+        console.log(person["address"])
+        console.log(person["age"])
+        console.log(person["ph_no"])
+
+for (let p in person){
+    console.log(p+" : "+person[p])
+}
+ 
+const fruits={
+    name:'apple'
+}
+console.log(fruits.name)
+
+fruits.name='banana'     //generaly const varaiable doesnot accept similar varaiablename.
+console.log(fruits.name)
+
+fruits.price=900;
+console.log(fruits.price)
+
+console.log(fruits)
+delete fruits.name;   
+console.log(fruits)
+console.log(fruits.name)
+
+console.log("===============================================")
+    const emp={
+        name:'rajesh',
+        "id no":99,             //variable name to use  middle of space we must and should using json 
+        'current location':' hyderabad',   //json->javascript obj notation like use let 'a'=10, (or) let "b"='raju'
+        salary:50000
+    }
+console.log(emp)
+console.log(emp.salary)
+console.log(emp['id no'])   //json variables must and should use array notations
+console.log(emp["current location"])
+
+const student={
+    firstname:'gondu',
+    lastname:'Rajesh',
+    age:23,
+    display:function(){  //its is also key:value
+        alert(this.firstname+"  "+this.lastname)  //this is key word its using function outside varable using function inner must and should using "this" key 
+    }
+}
+console.log(student)
+// student.display()
+// student["display"]()  //array like notation
+
+console.log("======== Map  function =======")
+
+let mp=new Map();
+console.log(typeof mp)
+
+mp.set("name",'rajesh')
+mp.set('Ln','gondu')
+mp.set(1,'hi')               
+mp.set('2',"hello")
+mp.set(true,"valdate")
+
+console.log(mp)
+console.log(mp.get('2'))
+console.log(mp.get('1'))
+console.log(mp.get(1))        
+console.log(mp.get('name'))
+console.log(mp.get('rajesh'))
+
+console.log(mp.has(19))   //true or false
+console.log(mp.size)
+console.log(mp.delete('name'))
+
+let vag=new Map([
+    ['apple',600],
+    ['banana',200],
+    ['kiwi',300],
+    ['painapple',500],
+]);
+console.log(vag)
+
+for (let res of vag.keys()){
+console.log(res);
+}
+
+for (let res of vag.values()){
+console.log(res);
+}
+
+console.log("========set objects ==========")
+let st= new Set();
+console.log(st) 
+console.log(typeof st)
+
+let a={name:'raju'}
+let b={name:'siva'}
+let c={name:'sekhar'}
+let d={name:'Rajesh'}
+
+st.add(a)
+st.add(b)
+st.add(c)
+st.add(d)
+st.add(a)
+console.log(st.size)
+
+for(let user of st){
+    console.log(user.name)
+}
+console.log(st.delete(d))
+console.log(st)
+console.log(st.has("b"))  //true or false
+
+</script>
+</body>
+</html>

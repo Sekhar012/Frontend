@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>---functions---</h2>
+
+    <script>
+//named function --> without parametars without returntypes
+        function raja(){
+            let a=20,b=50,sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+            console.log("named function : sum (a+b) = "+sum)
+                    }
+                    else{
+                        sub=a-b
+                        console.log("named function : substraction (a-b) = "+sub)
+
+                        }
+                     }
+        raja()
+//named function-->without parametars with return types
+        function raja1(){
+            let a=20,b=30,sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+                        return "named function : sum (a+b) = "+(sum)
+                    }
+                    else{
+                        sub=a-b
+                        return "named function : substraction (a-b) = "+(sub)
+
+                        }
+                      }
+        console.log(raja1())
+//named function --> with parametars and with returntype
+    function raja2(a,b){
+            let sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+                        return "named function : sum (a+b) = "+(sum)
+                    }
+                    else{
+                        sub=a-b
+                        return "named function : substraction (a-b) = "+(sub)
+
+                        }
+                      }
+        console.log(raja2(20,10))
+//  function expression or anonymous function
+        let raja3=function(a,b){
+            let sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+            console.log("anonymous function : sum (a+b) = "+sum)
+                    }
+                    else{
+                        sub=a-b
+                        console.log("anonymous function : substraction (a-b) = "+sub)
+
+                        }
+                     }
+        raja3(57,35)
+//anonymous-->returntype,without parametars
+  let raja4=function(){
+    let a=20,b=25,sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+                        return "anonymous function : sum (a+b) = "+(sum)
+                    }
+                    else{
+                        sub=a-b
+                        return "anonymous function : substraction (a-b) = "+(sub)
+                        }
+
+   }
+   console.log(raja4())
+
+
+//arrow function
+let raja5=(a,b)=>{
+    let sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+                        console.log("arrow function : sum (a+b) = "+(sum))
+                    }
+                    else{
+                        sub=a-b
+                        console.log("arrow function : substraction (a-b) = "+(sub))
+                        }
+}
+raja5(200,300)
+
+
+//Arrow function-->with returntype and with parameters
+let raja6=(a,b)=>{
+    let sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+                        return "arrow function : sum (a+b) = "+(sum)
+                    }
+                    else{
+                        sub=a-b
+                        return "arrow function : substraction (a-b) = "+(sub)
+                        }
+}
+console.log(raja6(200,30));
+
+
+//default function
+function raja7(a,b=50)
+          {
+            let sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+            console.log("default function : sum (a+b) = "+sum)
+                    }
+                    else{
+                        sub=a-b
+                        console.log("default function : substraction (a-b) = "+sub)
+
+                        }
+          }
+        raja7(500)
+
+
+
+// callback functions
+
+function raja8(a,b){
+    console.log("call back function  my name is :"+a)
+    b()
+}
+   function sivaram(){
+    console.log("i am introvert")
+   }
+   raja8("raja sekhar",sivaram);
+
+
+   //iife->immediatly invoke function expression function
+    
+let abc=    (
+        function()
+        {
+           let a=920,b=200,sum=0,sub=0;
+            if(a>b) {
+                sum=a+b
+            console.log("IIFE function : sum (a+b) = "+sum)
+                    }
+                    else{
+                        sub=a-b
+                        console.log("IIFE named function : substraction (a-b) = "+sub)
+
+                        }
+        return  { sum:sum,sub:sub} 
+    }
+    )();   
+console.log(abc)
+
+//higher order function
+
+// function ab(a,b){
+//     console.log("my name is :"+a)
+//     b()
+// }
+//    function abc(){
+//    console.log("i am introvert")
+//    }
+//    ab("raja sekhar",abc)
+
+
+function step1(a,b,...r){
+    console.log(a(),b)
+}
+
+
+function step2(){}
+step1(step2,"9",0,8,)
+map(step2)
+</script>               
+</body>
+ </html>

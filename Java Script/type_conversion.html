@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> two types of conversions they are </h2>
+    <ul>
+        <li> IMPLICITY </li>
+        <li> EXPLICITY </li>
+    </ul>
+</body>
+<script>
+        document.write("<h2 style=background-color:lightblue; align=center> implicity conversion </h2>"+"<br>")
+
+    let a="12"+12
+    let b="12"-12
+    let c=12+12
+    let d=12+"12"
+    let e="12"-"12"
+    let f="12"*2
+    let g="raju"+ 123
+    let h=123+"raju"
+    let i=null-null
+    let i1=null+null
+    document.write(a+"<br>")
+    document.write(b+"<br>")
+    document.write(c+"<br>")
+    document.write(d+"<br>")
+    document.write(e+"<br>")
+    document.write(f+"<br>")
+    document.write(g+"<br>")
+    document.write(h+"<br>")
+    document.write(i+"<br>")
+    document.write(i1+"<br>")
+
+    document.write("<h2 style=background-color:lightblue; align=center> explicity conversion  *string to number*</h2>"+"<br>")
+    let j="123"
+    let k="raju123"
+    let l="123raju"
+    let m="true"
+    let n="false" 
+    
+    document.write(Number(j)+"<br>")
+    document.write(Number(k)+"<br>")
+    document.write(Number(l)+"<br>")
+    document.write(Number(m)+"<br>")
+    document.write(Number(n)+"<br>")
+    document.write(typeof Number(j))
+
+    document.write("<h2 style=background-color:lightblue; align=center> explicity conversion *number to string*</h2>"+"<br>") 
+    //number to string
+    let a1=123
+    let a2=23.234
+    let a3="raju"
+    let a4=true
+    document.write(String(a1),"<br>") //using any one like (, or + )
+    document.write(String(a2),"<br>")
+    document.write(String(a3),"<br>")
+    document.write(String(a4),"<br>")
+    
+    document.write("<h2 style=background-color:lightblue; align=center> explicity conversion *number to boolean*</h2>"+"<br>") 
+    //number to boolean
+    let b1=123
+    let b2=-1234
+    let b3=0
+    let b4=true
+    let b5=false
+    let b6=' '
+    let b7="rajesh"
+    let b8=" "
+    document.write(Boolean(b1),"<br>")
+    document.write(Boolean(b2),"<br>")
+    document.write(Boolean(b3),"<br>")
+    document.write(Boolean(b4),"<br>")
+    document.write(Boolean(b5),"<br>")
+    document.write(Boolean(b6),"<br>")
+    document.write(Boolean(b7),"<br>")
+    document.write(Boolean(b8),"<br>")
+    document.write(typeof Boolean(b8),"<br>")
+
+alert(16/0)
+alert(-16/0)
+alert("12"/7)
+
+
+
+</script>
+</html>

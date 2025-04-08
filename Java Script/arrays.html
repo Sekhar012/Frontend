@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome to arrays </h1>
+
+    <script>
+        let arr=[1,3,9,'raju','siva']
+        console.log(arr)
+        console.log(typeof arr)
+
+        let arr1=new Array(3,9,'Sekhar')   //Array its key word
+        console.log(arr1)
+        console.log(typeof arr1)
+
+        let fruits=['orange','apple','mango','banana']
+        let animals=['cat','dog','elephant','lion']
+        let movies=['baskhar','pushpa','kgf','RRR']
+        let person=['sathya',45,'hyderabad']
+
+        console.log(fruits)
+        console.log(fruits[0])
+        console.log(fruits[2])
+        console.log(fruits[4])
+//for loop
+console.log("==============for loop=============")
+        for (let i=0; i<fruits.length;i++){
+            console.log( i , fruits[i])
+        }
+
+        // for (let i=0; i<fruits.length;i++){
+        //     if (i<=2){
+        //     console.log( i , fruits[i])
+        // }
+        // }
+
+
+ //for of loop
+ console.log("==========for of loop==============")      
+        for(let ani of animals){
+            console.log(ani)
+        }
+
+
+ //for in loop
+ console.log("===========for in loop================")
+        for(let ani in animals){  
+            console.log( ani , animals[ani])
+        }
+
+//insert one more movie arr
+console.log("=======insert,update,delete=============")
+        movies.push("raj rani")
+        console.log(movies)
+
+        movies.unshift("bahubali")
+        console.log(movies)
+
+        movies.pop()
+        console.log(movies)
+
+        movies.shift()
+        console.log(movies)
+
+//splice(indexlocation,how many value deleted,insert any no of values)
+console.log("splice(indexlocation,how many value deleted,insert any no of values)")
+        
+        movies.splice(1,2)
+        console.log(movies)
+
+        movies.splice(1,0,'Sekhar',9,92)
+        console.log(movies)
+
+//slice(start,end)-->like substring
+console.log("====slice --> like substring===")
+        console.log(animals)
+
+        let a = animals.slice(1,3)
+        console.log(a)
+
+//concat
+console.log("====concat======")
+        let b = person.concat(animals,movies)
+        console.log(b)
+
+//index...
+console.log("===index values===")
+        let num=[3,1,2,'true',4,9,10,1,12,13,14,'raju',0,false]
+        let result=num.indexOf(12)
+        console.log(result)
+
+        let res=num.indexOf(1)
+        console.log(res)
+
+        let res1=num.lastIndexOf(1)
+        console.log(res1)
+
+        let res2=num.includes(5,true)  //var.includes(indexnumber,any some value)-->T or F
+        console.log(res2)
+
+        let res3=num.find(   //find and findIndex both are difrent
+            function(raja)
+            {
+                 raja>6;           //like after value
+                console.log(res3)
+            }
+        )
+        console.log(res3)
+sort in array
+console.log("===sort in array===")
+
+
+        let sorted = fruits.sort()
+        console.log(sorted)
+
+        let nn=[20,100,12,15,9]
+        let st=nn.sort()
+        console.log(st)  //each array 1st leter validate to convert asscinding order
+        
+        let abc=nn.sort(
+            function(a,b){
+                return a-b;
+            }
+        )
+        console.log(abc)
+
+//map         //map and filter -->inbielt functions
+        let ap=nn.map(i=>i*i)
+        console.log(ap)
+//filter
+        let even=nn.filter(p=>p%2==0)
+        console.log(even)
+   </script>
+</body>
+</html>

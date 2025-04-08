@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome to Es-6 features... </h1>
+    <ul>let a=10
+        a=20
+        console.log(a)
+    <li> let const key words </li>
+    <li> template iterals</li>
+    <li> arraow functions </li>
+    <li> defoult parameters in functions </li>
+    <li> for of loop </li>
+    <li> array distriction </li>
+    <li> object distriction </li>
+    <li> classes (parent and chaild relation)</li>
+    <li> rest parameters </li>
+    <li> spread operator </li>
+    </ul>
+    <script>
+        // const a=10
+        // a=20
+        // console.log(a)
+        
+        // var b=10
+        // b=20
+        // console.log(a)
+
+        // let c=10,d=20
+        // let rr=`sum of ${c} and ${d} = `
+        // sum=c+d
+        // console.log(rr+sum)
+
+//arrow function
+        let nm=(a,b)=>{
+            console.log("hi hello"+ (a+b))
+        }
+        nm(1,2)
+
+//defoult parameters in functions
+        function great(wel,age=22)
+        {
+            console.log("hello welcome "+wel+"  "+age)
+        }
+        great("Sekhar");
+        great("raja",21);
+
+//for loop
+        const fruits =["apple","orange","banana","kiwi"]
+        for (let i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+        }
+
+//for in loop       
+        for(let frt in fruits){   //index values
+            console.log(frt)
+        }
+
+//for of loop
+        for(let frt of fruits){    // variable values
+            console.log(frt)
+        }
+
+//array distriction 
+        console.log(fruits)
+        let [val1,val2,val3]=fruits
+        console.log(val1)
+        console.log(val3)
+
+//object distriction
+        let person={
+            name:"raju", age:22
+        }
+        console.log(person)
+
+        let {name,age}=person
+        console.log(age)
+
+//classes (parent and chaild relation)
+        class parent{
+            constructor(name,age)  // java lo directly use className but script lo constructor key word using 
+            {
+                this.name=name;
+                this.age=age;
+            }
+            sekhar()
+            {
+                console.log(`welcome to india ${name} and age ${age}`)
+            }
+        }
+        saygreat();
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome to datatypes </h1>
+    <ul>
+        <li> string </li>
+        <li>number</li>
+        <li>boolean</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>object</li>
+        <li>arrays</li>
+        <li>function</li>
+    </ul>
+</body>
+<script id ="ab">
+    document.write("<h2 style=background-color:yellow; align=center> string represent in javascript</h2>"+"<br>")
+    let a='ramu'
+    let b="raju123"
+    let c=`welcome ${a}`
+    let d='welcome to "javascript"'
+    document.write(a+"<br>")
+    document.write(b+"<br>")
+    document.write(c+"<br>")
+    document.write(d+"<br>")
+    document.write(typeof c+"<br>")
+    document.write(+"<br>")
+    console.log(a+b+c+d)
+    
+    document.write("<h2 style=background-color:yellow; align=center> number data type </h2>"+"<br>")
+    let f=234
+    let g=23.23
+    let h=34+23
+    document.write(f+"<br>")
+    document.write(g+"<br>")
+    document.write(h+"<br>")
+    document.write(typeof h+"<br>")
+
+    document.write("<h2 style=background-color:yellow; align=center> boolean data type </h2>"+"<br>")
+    let i=true
+    let j=false
+    document.write(i+"<br>")
+    document.write(j+"<br>")
+    document.write(typeof j+"<br>")
+
+    document.write("<h2 style=background-color:yellow; align=center> examples of large numbers </h2>"+"<br>")
+    let k=5583680340934094449989898998
+    document.write(k+"<br>")
+    document.write(BigInt(k)+"<br>")
+    document.write(typeof k)
+
+    document.write("<h2 style=background-color:yellow; align=center> few small examples  </h2>"+"<br>")
+    let l=' '
+    document.write(l+"<br>")
+    document.write(typeof l+"<br>"+"<br>")
+
+    let m=null
+    document.write(m+"<br>")
+    document.write(typeof m+"<br>")
+
+        let n 
+        document.write(n+"<br>")
+        document.write(typeof n+"<br>")
+       
+    document.write("<h2 style=background-color:yellow; align=center> object data type </h2>"+"<br>")
+    let o={name:"raju",age:23}
+    document.write(o+"<br>")
+    console.log(o)
+    document.write(typeof o+"<br>")
+
+    document.write("<h2 style=background-color:yellow; align=center> array data type </h2>"+"<br>")
+    let p=[1526,726,"raja",'sekhar']
+    document.write(p+"<br>")  //every thing is object like more than two values
+    console.log(p)
+    document.write(typeof p+"<br>")
+
+    document.write("<h2 style=background-color:yellow; align=center> function data type </h2>"+"<br>")
+    function sleep()
+    {
+        document.write("hi 'hello' how are you"+"<br>")
+        console.log("hi 'hello' how are 'you'")
+    }
+    sleep()
+    document.write(typeof sleep +"<br>")
+
+</script>
+</html>
