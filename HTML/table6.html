@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+table,tr,th,td{border:2px solid blue;}
+tr,td{text-align:center;}
+</style>
+</head>
+<body align="center">
+<h2> Using TABLES In Websites</h2>
+<table align="center" height="400px" style=" background-color:yellow">
+<caption> <h4>Caption-nested Table<h4></caption>
+<tr>
+<th>Column 1</th>
+<th colspan="2"> Column 2</th>
+</tr>
+<tr>
+<td colspan="3"> Colspan column</td>
+</tr>
+<tr>
+<td rowspan="3">Rowspan cell</td>
+<td colspan="2"> Cell 2</td>
+</tr>
+<tr>
+<td>
+<table class="inline-table" style="background-color:red;height:100%;">
+<tr>
+<th>Inner column heading 1</th>
+<th>inner column heading 2</th>
+</tr>
+<tr>
+<td style="background-color:black;color:white;">Inner data cell 1</td>
+<td style="background-color:indigo;">
+<table class="inner-table" style="background-color:lime;height:75%;width:80%;" align="center">
+<tr>
+<th>Inner most column heading 1</th>
+<th>Inner most column heading 2</th>
+</tr>
+<tr>
+<td style="background-color:pink">Innermost Data cell 1</td>
+<td style="background-color:orange;color:white;">Innermost Data cell 2</td>
+</tr>
+</table></td></tr>
+</table></body></html>
