@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    
+        .parent{
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 15% 70% 15%;
+            grid-gap: 10px;
+            margin: 10px;
+            justify-self: center;
+        }
+        .parent>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+
+
+        }
+        .ab{
+            border: 2px solid blue;
+        }
+        #a1{
+            background-color: blueviolet;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #a2{
+            background-color: rgb(226, 43, 43);
+        }
+        #a3{
+            background-color: rgb(38, 248, 118);
+        }
+        #a4{
+            background-color: rgb(194, 236, 27);
+        }
+        #a5{
+            background-color: rgb(247, 115, 22);
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body><div>
+    <div class="parent">
+        <div class="ab" id="a1">HEADER</div>
+        <div class="ab" id="a2">SIDE BAR</div>
+        <div class="ab" id="a3">MAIN CONTENT</div>
+        <div class="ab" id="a4">SIDE BAR</div>
+        <div class="ab" id="a5">FOOTER</div>
+</div></div>
+</body>
+</html>

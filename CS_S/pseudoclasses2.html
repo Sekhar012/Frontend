@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    li:nth-child(even) {
+        background-color: #fd0b0b;
+      }
+        h3:not(#abc){
+        background-color: yellow;
+      }
+      
+      li:first-child {
+        font-weight: bold;
+      }
+      button:hover{
+        width: 200px;
+        height: 60px;
+        background-color: yellow;
+        color: red;
+        cursor: pointer;
+      }
+      input:focus{
+        background-color: rgb(109, 229, 227);
+        border: 5px solid rgb(245, 7, 7);
+        color: red;
+        font-size: x-large;
+      }
+      a{
+        color:blueviolet;
+      }
+      a:visited{
+        color:rgb(6, 230, 32);
+      }
+      input:checked + label{
+        color: aqua;
+        border: 3px solid blue;
+        background-color: yellow;
+
+      }
+      </style>
+</head>
+<body>
+    <ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3 </li>
+  <li>Item 4</li>
+</ul>
+
+<a href="table.html">Normal Link</a>
+
+<br><br>
+
+<a href="#">Visited Link</a>
+
+<br><br>
+
+<input typle="abc" placeholder="enter your name"/>
+
+<h3> nothing but not nothing </h3>
+<h3 id="abc"> nothing but not nothing </h3>
+<!-- <label for="ab"> check box </label> -->
+<input id="ab" type="checkbox"/>
+<label for="ab"> check box </label>
+
+
+
+<br><br>
+<button> HOVER </button>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Position Example</title>
+  <style>
+    .static-box {
+      position: static; 
+      background-color: lightblue;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    .relative-box {
+      position: relative; 
+      background-color: lightgreen;
+      padding: 10px;
+      margin: 10px;
+      top: 20px; 
+      left: 20px;
+    }
+
+    .absolute-box {
+      position: absolute; 
+      background-color: lightcoral;
+      padding: 10px;
+      margin: 10px;
+      top: 0px;
+      right: 0px; 
+    }
+
+    .fixed-box {
+      position: fixed; 
+      background-color: rgb(244, 244, 10);
+      padding: 10px;
+      margin: 10px;
+      top: 10px; 
+      right: 10px; 
+    }
+
+    .sticky-box {
+      position: sticky; 
+      background-color: lightpink;
+      padding: 10px;
+      margin: 10px;
+      top: 0; 
+    }
+
+    .container {
+      position: relative; 
+      height: 400px;
+      border: 2px solid #000;
+      padding: 20px;
+      overflow:auto;
+    }
+
+    .spacer {
+        background-color: white;
+        color: blue;
+        height: 1000px;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Positioning Demonstration</h1>
+  <div class="container">
+    <div class="static-box">Static (Default)</div>
+    <div class="relative-box">Relative</div>
+    <div class="absolute-box">Absolute (relative to the container)</div>
+    <div class="sticky-box">Sticky (sticks to top when scrolling)</div>
+    <div class="spacer">Scroll down to see the sticky and fixed effects.</div>
+  </div>
+  <div class="fixed-box">Fixed (always stays in the viewport)</div>
+    
+</body>
+</html>

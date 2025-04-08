@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    .abc{
+        background-color: aquamarine;
+        height: 700px;
+        width: 900px;
+        justify-self: center;
+        border: 3px dashed rgb(245, 8, 8);
+    }
+    .ab{
+        height: 100px;
+        width: 100px;
+        animation:raju;
+        position: relative;
+        animation-duration: 7.2s;
+        animation-delay: 2s;
+        animation-iteration-count:5;
+        animation-direction: alternate;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    }
+   
+    @keyframes raju{
+        from 
+        {
+            top: 0px;
+            left: 0px;
+        }
+         25%{
+            top: 100px;
+            left: 200px;
+            border-radius: 50%;
+        }
+        50%{
+            top: 0px;
+            left: 400px;
+            border-radius: 0%;
+            background-color: rgb(112, 15, 231);
+            transform:translateZ(0px);
+            transform:rotateZ(360deg);
+        }
+        75%{
+            top: 100px;
+            left: 600px;
+            border-radius: 50%;
+            background-color: rgb(67, 198, 205);
+            
+        }
+        100%{
+            top: 0px;
+            left: 600px;
+            border-radius: 50%;
+            background-color:rgb(245, 233, 2)
+        } 
+    }
+        #a1{
+            background-color:red;
+            animation-timing-function: ease;
+        }
+        #a2{
+            background-color:rgb(8, 235, 50);
+            animation-timing-function: ease-in;
+        }
+        #a3{
+            background-color:rgb(252, 9, 191);
+            animation-timing-function: ease-out;
+        }
+        #a4{
+            background-color:rgb(68, 31, 154);
+            animation-timing-function: ease-in-out;
+        }
+        #a2{
+        animation-name: raj;
+
+    }
+    @keyframes raj {
+        from 
+        {
+            top: 0px;
+            left: 0px;
+        }
+         25%{
+            top: 100px;
+            left: 200px;
+            border-radius: 50%;
+        }
+        50%{
+            top: 0px;
+            left: 400px;
+            border-radius: 0%;
+            background-color: rgb(112, 15, 231);
+            transform:translateZ(0px);
+            transform:rotateZ(360deg);
+        }
+        75%{
+            top: 100px;
+            left: 600px;
+            border-radius: 0%;
+            background-color: rgb(254, 5, 179);
+            
+        }
+        100%{
+            top: 0px;
+            left: 600px;
+            border-radius: 50%;
+            background-color:rgb(245, 233, 2)
+        } 
+                
+            }
+</style>
+<body>
+    <div class="abc">
+    <div class="ab" id="a1">1 ease</div>
+    <div class="ab" id="a2">2 ease-in</div>
+    <div class="ab" id="a3">3 ease-out</div>
+    <div class="ab" id="a4">4 easeinout</div>
+</div>
+    
+</body>
+</html>
